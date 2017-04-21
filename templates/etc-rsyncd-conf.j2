@@ -14,5 +14,6 @@ read only = {{ share.readonly | default(True) | ternary('true', 'false' ) }}
 uid = {{ share.uid | default('nobody') }}
 gid = {{ share.gid | default('nobody') }}
 exclude = {{ share.excludes | default(['lost+found', '.*']) | join(' ') }}
-hosts allow = {{ share.hostsallow | default['0.0.0.0/0'] | join (' ') }}
+hosts allow = {{ share.hostsallow | default(['0.0.0.0/0']) | join (' ') }}
+hosts deny = {{ share.hostsdeny | default([]) | join (' ') }}
 {% endfor %}

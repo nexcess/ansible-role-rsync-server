@@ -19,6 +19,8 @@ Defaults: `defaults/main.yml`
   - `uid`: User name or ID when access the share, default `nobody`
   - `gid`: Group name or ID when access the share, default `nobody`
   - `excludes`: A list of exclusions, default `['lost+found', '.*']`
+  - `hostsallow`: A list of allowed hosts, default `['1.2.3.4', '2.3.4.0/24']`
+  - `hostsdeny`: A list of denied hosts, default `['1.2.3.4', '2.3.4.0/24']`
 
 
 Log rotation:
