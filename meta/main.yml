@@ -10,6 +10,4 @@ galaxy_info:
     - 7
   galaxy_tags: []
 
-dependencies:
-- role: openmicroscopy.logrotate
-- role: openmicroscopy.selinux-utils
+dependencies: []
