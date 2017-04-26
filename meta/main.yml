@@ -10,4 +10,6 @@ galaxy_info:
     - 7
   galaxy_tags: []
 
-dependencies: []
+dependencies:
+  - name: "nexcess.selinux-utils"
+    src: "git+git@github.com:nexcess/ansible-role-selinux-utils.git"
